@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import { Navbar, Nav, Button, Image } from 'react-bootstrap'
-import { connect } from 'react-redux'
+import { connect } from '../react-redux'
 import { login } from '../actions/loginActions'
 
 class Header extends Component {

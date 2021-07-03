@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux'
+import { connect } from '../react-redux'
 import { likePost, unlikePost } from '../actions/postsActions'
 import { Card, Button } from 'react-bootstrap'
 class Post extends Component {

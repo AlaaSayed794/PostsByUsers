@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import ProfilePost from './ProfilePost'
-import { connect } from 'react-redux'
+import { connect } from '../react-redux'
 import { ListGroup } from 'react-bootstrap'
 class Profile extends Component {
     render() {

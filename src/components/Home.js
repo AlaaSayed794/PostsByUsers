@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Post from './Post'
-import { connect } from 'react-redux'
+import { connect } from '../react-redux'
 import { ListGroup } from 'react-bootstrap'
 class Home extends Component {
     render() {

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { connect } from 'react-redux'
+import { connect } from '../react-redux'
 import { login } from "../actions/loginActions"
 import { getUsers } from '../actions/usersActions'
 import { Form, Button } from 'react-bootstrap'

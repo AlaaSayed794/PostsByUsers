@@ -2,11 +2,12 @@ import React, { Component } from 'react'
 import { Route } from 'react-router-dom'
 import { getUsers } from './actions/usersActions'
 import { getPosts } from './actions/postsActions'
-import { connect } from 'react-redux'
+import { connect } from './react-redux'
 import Layout from './components/Layout'
 import Login from './components/Login'
 import Home from './components/Home'
 import Profile from './components/Profile'
+import { withRouter } from 'react-router-dom'
 
 class App extends Component {
     componentDidMount() {
@@ -30,4 +31,5 @@ const mapStateToProps = state => (
         currentUser: state.loginReducer.currentUser
     }
 )
-export default connect(mapStateToProps, { getPosts, getUsers })(App)
+export default withRouter(connect(mapStateToProps, { getPosts, getUsers })(App));
+
